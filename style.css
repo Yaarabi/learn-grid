@@ -21,12 +21,12 @@ body{
         justify-content: center;
         align-items: center;
         background-color: blue;
-        /* grid-area: main; */
-        grid-column-start: 1;
+        /* grid-area: main;
         grid-row-start: 2;
-        grid-column-end: 4;
-        grid-row-end: 4;
-        
+        /* grid-column-start: 1;
+        grid-row-end: 4; */
+        /* grid-column-end: 4;  */
+        grid-area: 2/1/4/4;
     }
     aside{
         display: flex;
@@ -34,10 +34,11 @@ body{
         align-items: center;
         background-color: blueviolet;
         /* grid-area: asid; */
+        /* grid-row-start: -4;
         grid-column-start: 4;
-        grid-row-start: -4;
-        grid-column-end: 5;
         grid-row-end: -2;
+        grid-column-end: 5; */
+        grid-area: -4/4/-2/5;
     }
     footer{
         display: flex;
@@ -45,10 +46,11 @@ body{
         align-items: center;
         background-color: aqua;
         /* grid-area: footer; */
-        grid-column-start: 1;
         grid-row-start: 4;
-        grid-column-end: 5;
+        grid-column-start: 1;
         grid-row-end: 5;
+        grid-column-end: 5;
+        grid-area: 4/1/5/5;
         
     }
     }
